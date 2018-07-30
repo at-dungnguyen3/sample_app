@@ -4,6 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.3.1'
 
 gem 'rails', '~> 5.2.0'
+gem 'bootstrap-sass'
 gem 'mysql2'
 gem 'pry'
 gem 'puma', '~> 3.11'
@@ -19,6 +20,7 @@ gem 'config'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails'
 end
 
 group :development do
